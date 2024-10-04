@@ -1,6 +1,7 @@
 /* tslint:disable */
 import {
   Discussion,
+  DiscussionCategory,
   InstallationLite,
   Organization,
   Repository,
@@ -15,17 +16,7 @@ import {
 export interface DiscussionCategoryChangedEvent {
   changes: {
     category: {
-      from: {
-        id: number;
-        repository_id: number;
-        emoji: string;
-        name: string;
-        description: string;
-        created_at: string;
-        updated_at: string;
-        slug: string;
-        is_answerable: boolean;
-      };
+      from: DiscussionCategory;
     };
   };
   action: 'category_changed';

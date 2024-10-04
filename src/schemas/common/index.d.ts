@@ -17,6 +17,7 @@ export * from './dependabot-alert-package';
 export * from './dependabot-alert';
 export * from './deployment-workflow-run';
 export * from './deployment';
+export * from './discussion-category';
 export * from './discussion';
 export * from './github-org';
 export * from './installation-lite';
